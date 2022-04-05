@@ -30,7 +30,7 @@ section[data-testid='stSidebar'] > div:hover{
 }
 
 /* The button on the streamlit navigation menu - hidden */
-button[kind="icon"] {
+button[kind="header"] {
     display: none;
 }
 
