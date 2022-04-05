@@ -20,6 +20,8 @@ pip install streamlit-on-Hover-tabs
 - name: This is the name of the tab
 - iconName: This is the name of the icon you wish to use in the sidebar
 
+You need to save the style.css file in your directory. Its located [here](https://github.com/Socvest/streamlit-on-Hover-tabs/tree/main/st_on_hover_tabs)
+
 Examples:
 
 ```
