@@ -10,7 +10,7 @@ on-hover-tabs is a component meant for a custom navigation bar like the above cr
 
 Its build on the [streamlit custom components typescript template](https://github.com/streamlit/component-template)
 
-To install it
+To install it:
 ```
 pip install streamlit-on-Hover-tabs
 ```
@@ -20,7 +20,7 @@ pip install streamlit-on-Hover-tabs
 - name: This is the name of the tab
 - iconName: This is the name of the icon you wish to use in the sidebar
 
-Examples
+Examples:
 
 ```
 import streamlit as st
@@ -48,5 +48,5 @@ elif tabs == 'Economy':
     st.write('Name of option is {}'.format(tabs))
     
 ```
-
+![wide.png](./img/wide-hover.png)
 
