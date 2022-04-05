@@ -48,5 +48,5 @@ elif tabs == 'Economy':
     st.write('Name of option is {}'.format(tabs))
     
 ```
-![wide.png](./img/wide.png)
+
 
