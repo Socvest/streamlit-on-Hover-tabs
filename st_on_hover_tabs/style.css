@@ -1,4 +1,9 @@
- /* The navigation menu specs and size */
+ /* header element to be removed */
+header[data-testid="stHeader"] {
+    display:none;
+}
+
+/* The navigation menu specs and size */
 section[data-testid='stSidebar'] > div {
     height: 100%;
     width: 95px;
