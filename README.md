@@ -33,7 +33,8 @@ st.markdown('<style>' + open('./style.css').read() + '</style>', unsafe_allow_ht
 
 
 with st.sidebar:
-    tabs = on_hover_tabs(name=['Dashboard', 'Money', 'Economy'], iconName=['dashboard', 'money', 'economy'], key="1")
+    tabs = on_hover_tabs(name=['Dashboard', 'Money', 'Economy'], 
+                         iconName=['dashboard', 'money', 'economy'])
 
 if tabs =='Dashboard':
     st.title("Navigation Bar")
