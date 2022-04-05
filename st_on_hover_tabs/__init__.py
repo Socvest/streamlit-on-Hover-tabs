@@ -20,9 +20,9 @@ else:
     url="http://localhost:3001"
     )
 
-def on_hover_tabs(name, iconName, key=None):
+def on_hover_tabs(name, iconName, default_choice=1, key=None):
     
-    component_value = _on_hover_tabs(name=name, iconName=iconName, key=key, default='Option')
+    component_value = _on_hover_tabs(name=name, iconName=iconName, key=key, default=name[default_choice])
     
     return component_value
 
