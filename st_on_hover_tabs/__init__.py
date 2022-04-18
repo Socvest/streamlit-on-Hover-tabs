@@ -20,9 +20,9 @@ else:
     url="http://localhost:3001"
     )
 
-def on_hover_tabs(name, iconName, default_choice=1, key=None):
+def on_hover_tabs(tabName, iconName, styles=None, default_choice=1, key=None):
     
-    component_value = _on_hover_tabs(name=name, iconName=iconName, key=key, default=name[default_choice])
+    component_value = _on_hover_tabs(tabName=tabName, iconName=iconName, styles=styles, key=key, default=tabName[default_choice])
     
     return component_value
 
@@ -30,9 +30,13 @@ if not _RELEASE:
     st.subheader("Component that creates tabs corresponding with on hover sidebar")
     st.markdown('<style>' + open('./style.css').read() + '</style>', unsafe_allow_html=True) # Load the on hover side bar css file
 
+
+
     with st.sidebar:
-        tabs = on_hover_tabs(name=['Dashboard', 'Money', 'Economy'], iconName=['dashboard', 'money', 'economy'], key="1") ## create tabs for on hover navigation bar
-        
+         tabs = on_hover_tabs(tabName=['Dashboard', 'Money', 'Economy'], 
+                              iconName=['dashboard', 'money', 'economy'], 
+                              key="1") ## create tabs for on hover navigation bar
+
     if tabs =='Dashboard':
         st.title("Navigation Bar")
         st.write('Name of option is {}'.format(tabs))
