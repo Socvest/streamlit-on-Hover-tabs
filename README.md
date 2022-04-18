@@ -19,6 +19,11 @@ pip install streamlit-on-Hover-tabs
 
 - name: This is the name of the tab
 - iconName: This is the name of the icon you wish to use in the sidebar
+- styles: Borrowed an implementation from the wonderful [Victoryhb](https://github.com/victoryhb/streamlit-option-menu) implementation. It just has four html elements with css styles which you can adapt ust as you would if you were in a css file. It employs styles from glamor which allows for other implementations like hover, active etc as demonstrated below.
+    - 'navtab' which is the div container that contains the tabs
+    - 'tabOptionsStyle' which is the span container that contains the icons and tabName
+    - 'iconStyle' which is the icon tag that contains the icons
+    - 'tabStyle' which is the list contains the tabName
 
 You need to save the style.css file in your directory. Its located [here](https://github.com/Socvest/streamlit-on-Hover-tabs/tree/main/st_on_hover_tabs)
 
@@ -52,3 +57,25 @@ elif tabs == 'Economy':
 ```
 ![wide.png](./img/wide-hover.png)
 
+To implement with styles:
+
+```
+with st.sidebar:
+        tabs = on_hover_tabs(name=['Dashboard', 'Money', 'Economy'], 
+        iconName=['dashboard', 'money', 'economy'],
+        stylesEnd = {'navtab': {'background-color':'#111',
+                                'color': '#818181',
+                                'font-size': '18px',
+                                'transition': '.3s',
+                                'white-space': 'nowrap',
+                                'text-transform': 'uppercase'},
+                     'tabOptionsStyle': {':hover': {'color': 'red',
+                                                    'cursor': 'pointer'}},
+                     'iconStyle':{'position':'fixed',
+                                  'left':'7.5px',
+                                  'text-align': 'left'},
+                     'tabStyle' : {'list-style-type': 'none',
+                                    'margin-bottom': '30px',
+                                    'padding-left': '30px'}},
+        key="1")
+```
