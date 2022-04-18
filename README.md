@@ -68,7 +68,7 @@ with st.sidebar:
                                                   'transition': '.3s',
                                                   'white-space': 'nowrap',
                                                   'text-transform': 'uppercase'},
-                                       'tabOptionsStyle': {':hover': {'color': 'red',
+                                       'tabOptionsStyle': {':hover :hover': {'color': 'red',
                                                                       'cursor': 'pointer'}},
                                        'iconStyle':{'position':'fixed',
                                                     'left':'7.5px',
