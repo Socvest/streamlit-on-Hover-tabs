@@ -19,7 +19,7 @@ pip install streamlit-on-Hover-tabs
 
 - name: This is the name of the tab
 - iconName: This is the name of the icon you wish to use in the sidebar
-- styles: Borrowed an implementation from the wonderful [Victoryhb](https://github.com/victoryhb/streamlit-option-menu) implementation. It just has four html elements with css styles which you can adapt ust as you would if you were in a css file. It employs styles from glamor which allows for other implementations like hover, active etc as demonstrated below.
+- styles: Borrowed an implementation from the wonderful [Victoryhb](https://github.com/victoryhb/streamlit-option-menu) implementation. It just has four html elements with css styles which you can adapt ust as you would if you were in a css file. It employs styles from glamor which allows for other implementations like hover, active etc as demonstrated below. Now you can create your own navigation bar and customize the tabs to meet the specs of your custom tab. 
     - 'navtab' which is the div container that contains the tabs
     - 'tabOptionsStyle' which is the span container that contains the icons and tabName
     - 'iconStyle' which is the icon tag that contains the icons
