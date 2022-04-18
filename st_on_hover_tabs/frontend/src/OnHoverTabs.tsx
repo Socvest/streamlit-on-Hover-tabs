@@ -4,6 +4,7 @@ import {
   withStreamlitConnection,
 } from "streamlit-component-lib"
 import React, { ReactNode } from "react"
+import { style } from 'glamor';
 import "./component.css"
 import "./icons/icon.css"
 
@@ -16,8 +17,9 @@ class OnHoverTabs extends StreamlitComponentBase<State> {
 
   public render = (): ReactNode => {
 
-    const labelName:string[] = this.props.args["name"]
+    const labelName:string[] = this.props.args["tabName"]
     const iconName:string[] = this.props.args["iconName"]
+    const styles: any = this.props.args['styles'] || {}
 
     let data:any[] = [];
     iconName.forEach((v,i) => 
@@ -27,23 +29,22 @@ class OnHoverTabs extends StreamlitComponentBase<State> {
     this.state = {icon:data[0].icon,
                   label:data[0].label}
    
-    const res = data.map(({id, icon, label}) => (
-                                  <li className="tab"
-                                  key={id}
-                                  onClick={() => this.setState(
-                                    prevState => ({icon:icon, label:label}),
-                                                    () => Streamlit.setComponentValue(label)
-                                  )}><i className="material-icons">{icon}</i><span className="labelName">{label}</span></li>
-                                ))
-
-    const { theme } = this.props
-    const styles: React.CSSProperties = {}
+    const results = data.map(({id, icon, label}) => (
+                    <span className="tab-container" {...style(styles['tabOptionsStyle'])}>
+                      <li className="tab"
+                        {...style(styles['tabStyle'])}                                   
+                        key={id}
+                        onClick={() => this.setState(
+                          prevState => ({icon:icon, label:label}),
+                                        () => Streamlit.setComponentValue(label)
+                      )}><i className="material-icons" {...style(styles['iconStyle'])}>{icon}</i><span className="labelName">{label}</span></li></span>
+                    ))
 
     return (
   
-      <div className="navtab">
-        <ul className="tab-options">
-        {res}
+      <div className="navtab" {...style(styles['navtab'])}> 
+        <ul className="all-tabs-options">
+        {results}
         </ul> 
       </div>
     )

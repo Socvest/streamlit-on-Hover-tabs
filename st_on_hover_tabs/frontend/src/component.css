@@ -6,24 +6,23 @@
     white-space: nowrap;
     text-transform: uppercase;
     /* padding-top: 150px;   */
-    
 }
+
 
 /* This controls the list component that contains the icons and the labels */
 .tab {
     list-style-type: none;
     margin-bottom: 30px;
     padding-left:30px;
-    
-    
 }
 
 /* We use the unordered list component to make sure when we hover, he colour changes and the pointer too */
-ul :hover {
+.tab-container :hover {
     color: #f1f1f1;
-    cursor: pointer;
-    
+    cursor: pointer;   
 }
+
+
 
 /* Features of the icon */
 .material-icons {
