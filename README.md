@@ -63,11 +63,11 @@ with st.sidebar:
         tabs = on_hover_tabs(name=['Dashboard', 'Money', 'Economy'], 
                                     iconName=['dashboard', 'money', 'economy'],
                                     styles = {'navtab': {'background-color':'#111',
-                                                            'color': '#818181',
-                                                            'font-size': '18px',
-                                                            'transition': '.3s',
-                                                            'white-space': 'nowrap',
-                                                            'text-transform': 'uppercase'},
+                                                          'color': '#818181',
+                                                          'font-size': '18px',
+                                                          'transition': '.3s',
+                                                          'white-space': 'nowrap',
+                                                          'text-transform': 'uppercase'},
                                                  'tabOptionsStyle': {':hover': {'color': 'red',
                                                                                 'cursor': 'pointer'}},
                                                  'iconStyle':{'position':'fixed',
@@ -76,5 +76,5 @@ with st.sidebar:
                                                  'tabStyle' : {'list-style-type': 'none',
                                                                 'margin-bottom': '30px',
                                                                 'padding-left': '30px'}},
-        key="1")
+                                        key="1")
 ```
