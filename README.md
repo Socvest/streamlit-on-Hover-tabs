@@ -57,6 +57,8 @@ elif tabs == 'Economy':
 
 To implement with styles:
 
+(These are the current default CSS styles for the tabs)
+
 ```
 with st.sidebar:
         tabs = on_hover_tabs(name=['Dashboard', 'Money', 'Economy'], 
