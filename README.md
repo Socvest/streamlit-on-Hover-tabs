@@ -4,8 +4,7 @@ Custom tabs for on hover streamlit navigation bar created by custom css
 ![demonstration-on-hover.gif](./img/demonstration-on-hover.gif)
 
 on-hover-tabs is a component meant for a custom navigation bar like the above created via custom CSS. The CSS is also included in the repository. 
-- Its possible to chose custom icons which is enable via https://fonts.google.com/icons
-- Currently, its not yet possible to adjust the CSS of the tabs component via the python code, will work on it in the coming weeks
+- Its possible to chose custom icons which is enabled via https://fonts.google.com/icons
 - Plans to also adjust the sidebar via the python code is also in the works (like colour etc, but you can enter into the style css and do this yourself)
 
 Its built on the [streamlit custom components typescript template](https://github.com/streamlit/component-template)
