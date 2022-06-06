@@ -45,4 +45,10 @@ button[kind="header"] {
     }
 }
      
-  
+@media(max-width: 272px){
+    
+    section[data-testid='stSidebar'] > div {
+        width:15rem;
+    }
+}
+ 
