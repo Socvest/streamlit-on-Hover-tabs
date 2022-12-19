@@ -1,5 +1,9 @@
-section[data-testid='stSidebar'] > div:nth-of-type(1) {
+section[data-testid='stSidebar'] {
     background-color: #111;
+    min-width:unset !important;
+    width: unset !important;
+    flex-shrink: unset !important;
+    
 }
 
 button[kind="header"] {
