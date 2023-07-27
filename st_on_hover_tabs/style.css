@@ -4,7 +4,7 @@ section[data-testid='stSidebar'] {
     
 }
 
-@media(hover:hover) (min-width: 600px) and (max-width: 769px){
+@media(hover:hover) and (min-width: 600px) and (max-width: 769px){
 
     header[data-testid="stHeader"] {
         display:none;
