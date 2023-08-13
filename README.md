@@ -1,3 +1,7 @@
+**Disclosure**
+
+So I decided not to support this package nay further. There are far better options out there like [streamlt Antd Components](https://nicedouble-streamlitantdcomponentsdemo-app-middmy.streamlit.app/) ([github](https://github.com/nicedouble/StreamlitAntdComponents)) I stumbled upon. This offers nested nav options - which was what I implemented in the latest update but its already available in this package. Combine that with the switch_page function to navigate between pages. All the best.
+
 # streamlit-on-Hover-tabs
 Custom tabs for on hover streamlit navigation bar created by custom css
 
