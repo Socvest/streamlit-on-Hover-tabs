@@ -1,4 +1,5 @@
 # streamlit-on-Hover-tabs
+[![StandWithPalestineBadgeBordered](https://raw.githubusercontent.com/saedyousef/StandWithPalestine/main/badges/flat/bordered/StandWithPalestine.svg)](https://techforpalestine.org/learn-more)
 Custom tabs for on hover streamlit navigation bar created by custom css
 
 ![demonstration-on-hover.gif](./img/demonstration-on-hover.gif)
