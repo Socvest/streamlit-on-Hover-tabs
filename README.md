@@ -27,9 +27,10 @@ pip install streamlit-on-Hover-tabs
 - iconName: This is the name of the icon you wish to use in the sidebar
 - styles: Borrowed an implementation from the wonderful [Victoryhb](https://github.com/victoryhb/streamlit-option-menu) implementation. It just has four html elements with css styles which you can adapt as you would if you were in a css file. It employs styles from glamor which allows for other implementations like hover, active etc as demonstrated below. Now you can create your own navigation bar and customize the tabs to meet the specs of your custom tab. 
     - 'navtab' which is the div container that contains the tabs
-    - 'tabOptionsStyle' which is the span container that contains the icons and tabName
+    - 'all-tabs-options' is the parent element of 'tabStyle' below.
+    - 'tabStyle' which is the li container that contains the icons and tabName. Use this to control the active and hover design features. 
     - 'iconStyle' which is the icon tag that contains the icons
-    - 'tabStyle' which is the list contains the tabName
+    - 'labelName' which is the list tag that contains the tabName
 
 You need to save the style.css file in your directory. Its located [here](https://github.com/Socvest/streamlit-on-Hover-tabs/tree/main/st_on_hover_tabs)
 
@@ -76,13 +77,14 @@ with st.sidebar:
                                                   'transition': '.3s',
                                                   'white-space': 'nowrap',
                                                   'text-transform': 'uppercase'},
-                                       'tabOptionsStyle': {':hover :hover': {'color': 'red',
+                                       'tabStyle': {':hover :hover': {'color': 'red',
                                                                       'cursor': 'pointer'}},
+                                       'tabStyle' : {'list-style-type': 'none',
+                                                     'margin-bottom': '30px',
+                                                     'padding-left': '30px'},
                                        'iconStyle':{'position':'fixed',
                                                     'left':'7.5px',
                                                     'text-align': 'left'},
-                                       'tabStyle' : {'list-style-type': 'none',
-                                                     'margin-bottom': '30px',
-                                                     'padding-left': '30px'}},
+                                       },
                              key="1")
 ```
