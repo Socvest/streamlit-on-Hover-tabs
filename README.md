@@ -6,6 +6,7 @@ So I decided not to support this package nay further. There are far better optio
 I built a new sidebar component [here](https://github.com/Socvest/streamit-custom-sidebar). Will build other sidebar templates inside of this repo including the hover effect that the `streamlit-on-Hover-tabs` component was built on.  
 
 # streamlit-on-Hover-tabs
+[![StandWithPalestineBadgeBordered](https://raw.githubusercontent.com/saedyousef/StandWithPalestine/main/badges/flat/bordered/StandWithPalestine.svg)](https://techforpalestine.org/learn-more)
 Custom tabs for on hover streamlit navigation bar created by custom css
 
 ![demonstration-on-hover.gif](./img/demonstration-on-hover.gif)
